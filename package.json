@@ -1,0 +1,24 @@
+{
+	"bin": {
+		"taker": "./src/taker"
+	},
+	"name": "taker",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@faker-js/faker": "^7.6.0",
+		"ts-morph": "^18.0.0",
+		"typescript": "^5.0.2"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.11",
+		"ts-node": "^10.9.1"
+	}
+}

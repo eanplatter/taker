@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+const { spawnSync } = require("child_process");
+const path = require("path"); // Add this line
+const tsNode = require.resolve("ts-node/dist/bin");
+
+// Update this line to use an absolute path
+const script = path.join(__dirname, "generator.ts");
+const args = process.argv.slice(2);
+
+const result = spawnSync(tsNode, [script, ...args], {
+  stdio: "inherit",
+});
+
+process.exit(result.status);
+
